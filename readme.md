@@ -2,64 +2,10 @@
 	Challenge
 </h1>
 
-<h3 align="center">
-	Aplicação em Node
-</h3>
-
-
-
-
-
-
-
-
-
-<p align="center">
-	<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"/>
-</p>
 
 <h4 align="center">
 	Status: 🚀 Finalizado
 </h4>
-
-<p align="center">
-	<a href="#about">About</a> •
-	<a href="#tech-stack">Tech Stack</a> •
-	<a href="#contact">Contact</a> 
-</p>
-
-## About
-
-- Desafio em Node.js, consiste em criar uma aplicação onde o usuário cadastra um filme, preenche com algumas informações (nome, descrição, nota) e cria tags relacionadas a ele.
-
-- Diagrama que  pode ser usado como base:
-
-  ![desktop-preview](https://i.imgur.com/w7twvpX.png)
-
-  
-
-- Conhecimentos e Frameworks utilizados para fazer a parte logica do codigo:
-
-  - Express
-
-  - Nodemon
-
-  - Node modules
-
-  - Rotas e Metodos HTTP
-
-  - Meddlewares
-
-  - App Error
-
-  - Banco de dados Sqlite
-
-    
-
-- <a href="https://github.com/Tielson/Aplicacao_em_Node">Repositório</a>
-
-
-
 
 
 ## Tech Stack
