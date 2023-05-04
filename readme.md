@@ -1,15 +1,41 @@
-<h1 align="center">
-	Challenge
-</h1>
+<h1 align="center" id="title">Food-Explorer</h1>
+
+<p align="center"><img src="https://i.imgur.com/a005XPp.png" alt="project-image"></p>
+
+<p id="description">Description: Project made for the level 11 challenge. Project consists of creating an E-commerce.</p>
+
+<h2>🚀 Demo</h2>
+
+[https://master--challenge-food-explorer.netlify.app/](https://master--challenge-food-explorer.netlify.app/)
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+* User creation: Client/Adm
+* JWT Authentication
+* Routes
+*   Products
 
 
-<h4 align="center">
-	Status: 🚀 Finalizado
-</h4>
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+* typescript
+* Node.js
+*Express
+* colors
+* Sqlite3
+* Nodemon
+
+<h2>🛡️ License:</h2>
 
 
-## Tech Stack
-<img src="https://img.shields.io/badge/Git-05122A?style=flat&logo=git" alt="git Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Html5-05122A?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Javascript-05122A?style=flat&logo=javascript" alt="javascript Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Nodejs-05122A?style=flat&logo=node.js" alt="nodejs Badge" height="25">&nbsp;
 
 <img align="left" src="https://avatars.githubusercontent.com/Tielson?size=100">
 
