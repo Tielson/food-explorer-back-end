@@ -1,69 +1,41 @@
-<h1 align="center">
-	Challenge
-</h1>
+<h1 align="center" id="title">Food-Explorer</h1>
 
-<h3 align="center">
-	Aplicação em Node
-</h3>
+<p align="center"><img src="https://i.imgur.com/a005XPp.png" alt="project-image"></p>
 
+<p id="description">Description: Project made for the level 11 challenge. Project consists of creating an E-commerce.</p>
 
+<h2>🚀 Demo</h2>
 
-
-
-
-
-
-
-<p align="center">
-	<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"/>
-</p>
-
-<h4 align="center">
-	Status: 🚀 Finalizado
-</h4>
-
-<p align="center">
-	<a href="#about">About</a> •
-	<a href="#tech-stack">Tech Stack</a> •
-	<a href="#contact">Contact</a> 
-</p>
-
-## About
-
-- Desafio em Node.js, consiste em criar uma aplicação onde o usuário cadastra um filme, preenche com algumas informações (nome, descrição, nota) e cria tags relacionadas a ele.
-
-- Diagrama que  pode ser usado como base:
-
-  ![desktop-preview](https://i.imgur.com/w7twvpX.png)
+[https://master--challenge-food-explorer.netlify.app/](https://master--challenge-food-explorer.netlify.app/)
 
   
+  
+<h2>🧐 Features</h2>
 
-- Conhecimentos e Frameworks utilizados para fazer a parte logica do codigo:
+Here're some of the project's best features:
 
-  - Express
-
-  - Nodemon
-
-  - Node modules
-
-  - Rotas e Metodos HTTP
-
-  - Meddlewares
-
-  - App Error
-
-  - Banco de dados Sqlite
-
-    
-
-- <a href="https://github.com/Tielson/Aplicacao_em_Node">Repositório</a>
+* User creation: Client/Adm
+* JWT Authentication
+* Routes
+*   Products
 
 
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+* typescript
+* Node.js
+*Express
+* colors
+* Sqlite3
+* Nodemon
+
+<h2>🛡️ License:</h2>
 
 
-
-## Tech Stack
-<img src="https://img.shields.io/badge/Git-05122A?style=flat&logo=git" alt="git Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Html5-05122A?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Javascript-05122A?style=flat&logo=javascript" alt="javascript Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Nodejs-05122A?style=flat&logo=node.js" alt="nodejs Badge" height="25">&nbsp;
 
 <img align="left" src="https://avatars.githubusercontent.com/Tielson?size=100">
 
