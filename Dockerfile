@@ -22,8 +22,11 @@ ENV NODE_ENV production
 COPY . .
 
 RUN npm install
+RUN npm install pm2 -g
+
 FROM debian:bullseye
 
+COPY package*.json ./
 LABEL fly_launch_runtime="nodejs"
 
 COPY --from=builder /root/.volta /root/.volta
@@ -33,4 +36,4 @@ WORKDIR /app
 ENV NODE_ENV production
 ENV PATH /root/.volta/bin:$PATH
 
-CMD [ "npm", "run", "start" ]
+CMD ["pm2-runtime", "start", "ecosystem.config.js", "--env", "production"]

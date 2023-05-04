@@ -1,4 +1,3 @@
-const AppError = require("../utils/AppError")
 const sqliteConnection = require("../database/sqlite")
 
 class IngredientsController {
@@ -52,8 +51,8 @@ class IngredientsController {
       const database = await sqliteConnection()
 
       const notes = await database.all(`
-    SELECT  * FROM  my_order 
-    ORDER BY updated_at DESC
+      SELECT * FROM my_order
+      ORDER BY status = 'Pendente' DESC, updated_at
     `)
 
       return res.json(notes)

@@ -21,19 +21,25 @@ app.use(routes)
 
 app.use((error, req, res, next) => {
   if (error instanceof AppError) {
-    return res.status(error.statusCode).json({
-      status: "error",
-      message: error.message
-    })
+    return res.status(error.statusCode)
+      .header("Access-Control-Allow-Origin", "*")
+      .header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+      .json({
+        status: "error",
+        message: error.message
+      })
   }
 
   console.log(error)
 
-  return res.status(500).json({
-    status: "error",
-    message: "internal server error"
-  })
+  return res.status(500)
+    .header("Access-Control-Allow-Origin", "*")
+    .header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+    .json({
+      status: "error",
+      message: "internal server error"
+    })
 })
 
-const port = process.env.PORT || "8080";
+const port = process.env.PORT || '8080'
 app.listen(port, () => console.log(`Rodando na porta ${port}`))
