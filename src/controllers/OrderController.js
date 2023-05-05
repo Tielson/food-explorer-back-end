@@ -35,7 +35,7 @@ class IngredientsController {
 
       const database = await sqliteConnection();
 
-
+console.log(status, id, user_id);
       await database.run(`
       UPDATE my_order SET 
       status = ?,
@@ -52,7 +52,7 @@ class IngredientsController {
 
       const notes = await database.all(`
       SELECT * FROM my_order
-      ORDER BY status = 'Pendente' DESC, updated_at
+      ORDER BY status = 'Pendente' DESC,status = 'Preparando' DESC, updated_at DESC
     `)
 
       return res.json(notes)

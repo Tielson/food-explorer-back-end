@@ -8,7 +8,7 @@ const ingredientsRouters = Router()
 const orderController = new OrderController()
 
 ingredientsRouters.post("/" ,ensureAuthenticated, orderController.create)
-ingredientsRouters.put("/pedido" ,ensureAuthenticated, orderController.update)
+ingredientsRouters.put("/pedido/:id" ,ensureAuthenticated, orderController.update)
 ingredientsRouters.get("/" ,ensureAuthenticated, orderController.viewAll)
 ingredientsRouters.get("/ordernew" ,ensureAuthenticated, orderController.orderNew)
 ingredientsRouters.get("/toview" ,ensureAuthenticated, orderController.toview)
