@@ -2,8 +2,8 @@ const AppError = require('../utils/AppError')
 const DiskStorage = require('../providers/DiskStorage');
 const sqliteConnection = require("../database/sqlite")
 
-class DishImgController {
-    async update(req, res) {
+class CustomersImgController {
+    async create(req, res) {
         const user_id = req.user.id;
         const imgFilename = req.file.filename;
 
@@ -29,7 +29,7 @@ class DishImgController {
         await database.run(`
         UPDATE dishs set
         img = ?,
-        updated_at = DATETIME ('now') 
+        updated_at = DATETIME ('now','localtime')
         WHERE id = ?` ,
             [filename, selectedDish.id])
 
@@ -69,7 +69,7 @@ class DishImgController {
         const result = await database.run(`
         UPDATE dishs set
         img = ?,
-        updated_at = DATETIME ('now') 
+        updated_at = DATETIME ('now','localtime')
         WHERE id = ?`,
             [filename, selectedDish.id]);
         console.log('result:', result);
@@ -81,4 +81,4 @@ class DishImgController {
     }
 }
 
-module.exports = DishImgController
+module.exports = CustomersImgController

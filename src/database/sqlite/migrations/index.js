@@ -1,12 +1,14 @@
 const sqliteConnection = require('../../sqlite')
 const createUsers = require('./createUser')
-const createDishs = require('./createDishs')
-const createIngredients = require('./createIngredients')
+const createCustomers = require('./customers')
+const createTasks = require('./tasks')
+const createProject = require('./projects')
 
 async function migrationsRun() {
   const schemas = [
-    createDishs,
-    createIngredients,
+    createCustomers,
+    createProject,
+    createTasks,
     createUsers,
   ].join(';');
 

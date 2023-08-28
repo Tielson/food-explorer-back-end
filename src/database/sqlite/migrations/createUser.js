@@ -6,8 +6,8 @@ const createUsers = `
   password VARCHAR,
   isAdmin VARCHAR NULL,
   avatar VARCHAR NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  "created_at" TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now', 'localtime')),
+  "updated_at" TIMESTAMP DEFAULT (strftime('%Y-%m-%d %H:%M:%S', 'now', 'localtime'))
   )
 `;
 
